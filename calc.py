@@ -1,7 +1,7 @@
-from math import pow
+from math import pow, sqrt
 
 escolha = str(input("""Escolha sua opção 
-                    (+, -, *, /, **)\n"""))
+                    (+, -, *, /, **, //)\n"""))
 
 n1 = 0.0
 n2 = 0.0
@@ -35,6 +35,11 @@ elif escolha == "/":
 elif escolha == "**":
    n1 = float(input("Insira o primeiro número:"))
    n2 = float(input("Insira o segundo número:",))
-   resultado = float(pow(n1,n2) )
+   print(resultado = float(pow)(n1,n2) )
+
+elif escolha == "//":
+   n1 = float(input("Insira o número:"))
+   resultado = sqrt(n1)
+   print(resultado)
    
-   print(f"{n1}^{n2} = {resultado}")
+   
